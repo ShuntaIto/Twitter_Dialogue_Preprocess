@@ -60,3 +60,6 @@ This function removes "line feed code", '\n', from each tweet datum.
 ### pre_process
 
 This function applies all functions to data.
+
+## License
+MIT
