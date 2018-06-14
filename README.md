@@ -2,7 +2,8 @@
 
 ## What's this?
 
-This ipynb contains script to pre-process data collected by twitter_scraper(https://github.com/Marsan-Ma/twitter_scraper).
+This ipynb contains script to pre-process data collected by twitter_scraper(https://github.com/Marsan-Ma/twitter_scraper) for Seq2Seq.
+
 
 ## How to use
 
