@@ -16,7 +16,7 @@ raw_twitter_pairs = open('hogehoge.txt','r',encoding='utf-8')
 twitter_pairs = raw_twitter_pairs.readlines()
 ```
 
-1.import module
+1. import module
 
 You have to import this module. I like to import it as tdp, original name is too long to use. 
 
@@ -24,7 +24,7 @@ You have to import this module. I like to import it as tdp, original name is too
 import twitter_dialogue_preprocess as tdp
 ```
 
-1.pre-process
+1. pre-process
 
 ```py
 twitter_preprocessed_data = tdp.pre_process(twitter_pairs)
@@ -32,7 +32,7 @@ twitter_preprocessed_data = tdp.pre_process(twitter_pairs)
 
 
 
-You can use twitter_preprocessing.ipynb on Jupyter instead of using module.If you want to change detail of the script, I recommend ipynb file.
+You can use twitter_preprocessing.ipynb on Jupyter instead of using module. If you want to change detail of the script, I recommend ipynb file.
 
 
 ##  Function
