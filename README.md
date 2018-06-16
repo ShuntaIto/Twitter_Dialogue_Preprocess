@@ -4,6 +4,7 @@
 
 This ipynb contains script to pre-process data collected by twitter_scraper(https://github.com/Marsan-Ma/twitter_scraper) for Seq2Seq.
 
+I make this script for Japanese data, however, you can apply this script to any languages if you change regex patterns(r'hogehoge').
 
 ## How to use
 
