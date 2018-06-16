@@ -11,7 +11,7 @@ I make this script for Japanese data, however, you can apply this script to any 
 1. load data
 
 Twitter dialogue data collected by twitter_scraper are saved as text file(ex. hogehoge.txt).At first you have to load the data.
-```
+```py
 raw_twitter_pairs = open('hogehoge.txt','r',encoding='utf-8')
 twitter_pairs = raw_twitter_pairs.readlines()
 ```
@@ -19,13 +19,14 @@ twitter_pairs = raw_twitter_pairs.readlines()
 1.import module
 
 You have to import this module. I like to import it as tdp, original name is too long to use. 
-```
+
+```py
 import twitter_dialogue_preprocess as tdp
 ```
 
 1.pre-process
 
-```
+```py
 twitter_preprocessed_data = tdp.pre_process(twitter_pairs)
 ```
 
