@@ -82,9 +82,17 @@ This function removes tweet-pairs from data if they contain blank tweet after us
 
 This function removes "line feed code", '\n', from each tweet datum.
 
+### pairing
+
+This function convert data to the list object of the list objects which store dialogue (query and response).
+
 ### pre_process
 
 This function applies all functions to data.
+
+```py
+pre_process(twitter_data,pairing=False,save=False,save_name='twitter_preprocessed.pickle')
+```
 
 ## License
 MIT
