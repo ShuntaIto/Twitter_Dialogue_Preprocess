@@ -93,7 +93,16 @@ def delete_line_feed_code(twitter_data):
         dialogue_tweets.append(ele_code_deleted)
     return dialogue_tweets
 
-def pre_process(twitter_data,save=False,save_name='twitter_preprocessed.pickle'):    
+def pairing(twitter_data):
+    pairing_data = []
+    for i in range(0,len(twitter_data),2):
+        pair = []
+        pair.append(twitter_data[i])
+        pair.append(twitter_data[i+1])
+        pairing_data.append(pair)
+    return pairing_data
+
+def pre_process(twitter_data,pairing=False,save=False,save_name='twitter_preprocessed.pickle'):    
     try:
         data = delete_line_feed_code(delete_blank(delete_brackets(delete_emoji(delete_inline_username(delete_username_sos(delete_url(delete_hashtag_eos(delete_hashtag_tweets_pairs(delete_self_reply_pairs(twitter_data))))))))))
         num_rawdata = int(len(twitter_data)/2)
@@ -102,6 +111,8 @@ def pre_process(twitter_data,save=False,save_name='twitter_preprocessed.pickle')
         print('The Number of Raw Data: '+str(num_rawdata))
         print('The Number of Pre-processed Data: '+str(num_processed_data))
         print('Yield Rate: '+str(yield_rate))
+        if(pairing):
+            data = pairing(data)
         if(save):
             save_file = open(save_name,'wb') 
             pickle.dump(data,save_file)
