@@ -2,7 +2,7 @@
 
 ## What's this?
 
-This ipynb contains script to pre-process data collected by twitter_scraper(https://github.com/Marsan-Ma/twitter_scraper) for Seq2Seq.
+This .ipynb and .py files contain script to pre-process data collected by twitter_scraper(https://github.com/Marsan-Ma/twitter_scraper) for Seq2Seq.
 
 I make this script for Japanese data, however, you can apply this script to any languages if you change regex patterns(r'hogehoge').
 
@@ -10,7 +10,7 @@ I make this script for Japanese data, however, you can apply this script to any 
 
 ###  load data
 
-Twitter dialogue data collected by twitter_scraper are saved as text file(ex. hogehoge.txt).At first you have to load the data.
+Twitter dialogue data collected by twitter_scraper are saved as text file(ex. hogehoge.txt). At first you have to load the data.
 ```py
 raw_twitter_pairs = open('hogehoge.txt','r',encoding='utf-8')
 twitter_pairs = raw_twitter_pairs.readlines()
